@@ -14,9 +14,13 @@
 * **问心** - Initial work
 * QQ: 85589661
 
+## Resources
 
-## wiki
-* <http://wenxinnnnn.com/>
+- Other related projects
+  + [ais-restful](https://github.com/wenxinnnnn/ais-restful)
+
+- Documents
+  + [WIKI](http://wenxinnnnn.com/)
 
 ## License
 [MIT License](./LICENSE)
