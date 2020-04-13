@@ -1,0 +1,73 @@
+package com.wenxinnnnn.ais.impl;
+
+import com.wenxinnnnn.ais.*;
+import com.wenxinnnnn.ais.utils.Base64Builder;
+
+import static com.wenxinnnnn.ais.utils.Assert.notNull;
+
+/**
+ * @author chenqing
+ * @date 2018/7/12
+ */
+public abstract class AbstractAisBuilder<T> implements AisBuilder<T> {
+
+    protected Header header;
+    protected Signature signature;
+    protected SecretStore secretStore;
+
+    @Override
+    public AisBuilder<T> setHeader(Header header) {
+        notNull(header, "header参数不能为null");
+        this.header = header;
+        return this;
+    }
+
+    @Override
+    public AisBuilder<T> setSignature(Signature signature) {
+        notNull(signature, "signature参数不能为null");
+        this.signature = signature;
+        return this;
+    }
+
+    @Override
+    public AisBuilder<T> setSecretStore(SecretStore secretStore) {
+        this.secretStore = secretStore;
+        return this;
+    }
+
+    @Override
+    public String compact(T object) {
+
+        if (signature == null) {
+            throw new IllegalStateException("signature参数不能为null");
+        }
+        if (header == null) {
+            header = new Header(SignatureAlgorithm.HS256);
+        }
+        if (secretStore == null) {
+            throw new IllegalStateException("secret源不能为null");
+        }
+
+        String base64Header = Base64Builder.encode(header, "header信息base64编码错误");
+        String base64Signature = Base64Builder.encode(signature, "signature信息base64编码错误");
+        String base64Data = Base64Builder.encode(this.translate(object), "data信息base64编码错误");
+
+        String aisWithoutDegest = base64Header + AisConstant.SEPARATOR_CHAR + base64Signature + AisConstant.SEPARATOR_CHAR;
+
+        String secret = secretStore.getSecret(signature.getAppId());
+        Signer signer = SignerFactory.createSigner(header.getAlg(), secret);
+        String digest = signer.sign(aisWithoutDegest + base64Data);
+
+        return aisWithoutDegest + digest;
+    }
+
+    /**
+     * 自定义数据转换器
+     *
+     * @param object
+     * @return
+     */
+    public abstract String translate(T object);
+
+
+}
