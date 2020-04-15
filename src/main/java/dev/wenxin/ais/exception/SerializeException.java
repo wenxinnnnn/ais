@@ -3,7 +3,7 @@ package dev.wenxin.ais.exception;
 /**
  * AIS数据序列化失败异常
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/9
  */
 public class SerializeException extends AisException {

@@ -1,14 +1,11 @@
 package dev.wenxin.ais.impl;
 
-import com.wenxinnnnn.ais.*;
 import dev.wenxin.ais.*;
-import dev.wenxin.ais.utils.Base64Builder;
 import dev.wenxin.ais.utils.Assert;
-
-import static dev.wenxin.ais.utils.Assert.notNull;
+import dev.wenxin.ais.utils.Base64Builder;
 
 /**
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/12
  */
 public abstract class AbstractAisBuilder<T> implements AisBuilder<T> {

@@ -1,7 +1,7 @@
 package dev.wenxin.ais;
 
 /**
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class AisConstant {

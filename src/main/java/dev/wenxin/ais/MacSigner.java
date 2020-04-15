@@ -17,7 +17,7 @@ import static dev.wenxin.ais.utils.Assert.isTrue;
 /**
  * HMAC 加密算法实现类
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class MacSigner implements Signer {

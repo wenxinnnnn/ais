@@ -3,7 +3,7 @@ package dev.wenxin.ais.exception;
 /**
  * AIS签名异常
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/9
  */
 public class SignatureException extends AisException {

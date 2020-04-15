@@ -6,7 +6,8 @@ import static dev.wenxin.ais.utils.Assert.notNull;
 
 /**
  * 签名算法工厂类，通过算法，构建签名工具
- * @author chenqing
+ *
+ * @author wenxin
  * @date 2018/7/6
  */
 public class SignerFactory {

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/10
  */
 public class AisEntryTest {

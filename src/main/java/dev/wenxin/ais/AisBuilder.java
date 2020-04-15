@@ -3,7 +3,7 @@ package dev.wenxin.ais;
 /**
  * 用于构建AIS的生成器
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public interface AisBuilder<T> {

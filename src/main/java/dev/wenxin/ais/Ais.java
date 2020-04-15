@@ -2,7 +2,8 @@ package dev.wenxin.ais;
 
 /**
  * 应用签名实体
- * @author chenqing
+ *
+ * @author wenxin
  * @date 2018/7/6
  */
 public class Ais {

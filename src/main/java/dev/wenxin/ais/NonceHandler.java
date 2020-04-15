@@ -3,7 +3,7 @@ package dev.wenxin.ais;
 /**
  * 防重放处理器
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/9
  */
 public interface NonceHandler {

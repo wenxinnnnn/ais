@@ -5,7 +5,7 @@ import java.util.UUID;
 /**
  * AIS的第二部分，签名体
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class Signature {

@@ -6,7 +6,7 @@ import dev.wenxin.ais.impl.DefaultAisParser;
 /**
  * 应用接口签名(application interface signature)入口类，整合功能，方便使用
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class AisEntry {

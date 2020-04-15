@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 
 /**
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/12
  */
 public class DefinedNonceRulesTest {

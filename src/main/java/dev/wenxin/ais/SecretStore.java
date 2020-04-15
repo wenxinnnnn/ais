@@ -2,7 +2,8 @@ package dev.wenxin.ais;
 
 /**
  * 密匙仓库，实现接口实现密匙来源
- * @author chenqing
+ *
+ * @author wenxin
  * @date 2018/7/19
  */
 public interface SecretStore {

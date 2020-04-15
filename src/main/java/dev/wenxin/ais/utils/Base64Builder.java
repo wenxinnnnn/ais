@@ -6,7 +6,7 @@ import dev.wenxin.ais.exception.SerializeException;
 import java.util.Base64;
 
 /**
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class Base64Builder {

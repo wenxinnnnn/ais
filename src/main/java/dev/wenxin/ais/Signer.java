@@ -5,7 +5,7 @@ import dev.wenxin.ais.exception.SignatureException;
 /**
  * 签名接口
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public interface Signer {

@@ -1,6 +1,5 @@
 package dev.wenxin.ais.impl;
 
-import com.wenxinnnnn.ais.*;
 import dev.wenxin.ais.*;
 import dev.wenxin.ais.exception.SignatureException;
 import dev.wenxin.ais.exception.StructureException;
@@ -13,7 +12,7 @@ import static dev.wenxin.ais.utils.Assert.hasText;
 /**
  * AIS解析器抽象接口
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public abstract class AbstractAisParser<T> implements AisParser<T> {

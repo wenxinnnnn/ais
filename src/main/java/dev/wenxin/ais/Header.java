@@ -3,7 +3,7 @@ package dev.wenxin.ais;
 /**
  * AIS的第一部分，头部信息
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class Header {

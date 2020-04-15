@@ -5,7 +5,7 @@ import dev.wenxin.ais.NonceHandler;
 /**
  * 默认AIS解析器，支持String数据签名
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public class DefaultAisParser extends AbstractAisParser<String> {

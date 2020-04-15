@@ -3,7 +3,7 @@ package dev.wenxin.ais;
 /**
  * 用于读取AIS字符串的解析器
  *
- * @author chenqing
+ * @author wenxin
  * @date 2018/7/6
  */
 public interface AisParser<T> {
